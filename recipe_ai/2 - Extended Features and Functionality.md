@@ -1,18 +1,18 @@
 ## Addendum: Extended Features and Functionality
 
-### 1. Recipe Library per User
+### 1. Saved Recipes Library per User
 **Overview**  
-- The Recipe Library is private to each user, containing both generated and manually saved recipes.  
-- All newly generated recipes automatically appear in the user's **Recipe History**, from which the user can **save** any recipe to their personal library with a single click.
+- The Saved Recipes Library is private to each user, containing both generated and manually saved recipes.  
+- All newly generated recipes automatically appear in the user's **Recipe History**, from which the user can **save** any recipe to their personal Saved Recipes library with a single click.
 
 **Tagging & Organization**  
-- Recipes in the library can be tagged to facilitate search and categorization.  
+- Recipes in the Saved Recipes library and Recipe History can be tagged to facilitate search and categorization.  
 - When users click an **“Add Tag”** button on a recipe’s page, a text field is displayed. Typing in this field shows existing tags via autocomplete. Users can select an existing tag or create a new one.  
-- The library supports unlimited saved recipes. Pagination or infinite scrolling is used to handle large collections.
+- The Saved Recipes library supports unlimited saved recipes. Pagination or infinite scrolling is used to handle large collections.
 
 **Search & Filter**  
 - Users can **search** by free text or filter by tags and other recipe properties (e.g., cooking time, difficulty, etc.).  
-- This allows quick discovery of specific recipes within the library.
+- This allows quick discovery of specific recipes within the Saved Recipes library and Recipe History.
 
 ---
 
@@ -52,7 +52,7 @@
 
 **Version History & Restoration**  
 - In the **Recipe History**, only the most recent version of each recipe is displayed. However, a user can open the **history pane** from a specific recipe page to see older versions in a collapsible structure.  
-- The user cannot overwrite the “current” version with an older version; instead, they can **save** an older version to their library, which appears as a separate recipe entry.
+- The user cannot overwrite the “current” version with an older version; instead, they can **save** an older version to their library, which appears as a separate recipe entry in Saved Recipes library.
 
 **No Notifications on Version Creation**  
 - The system does not show explicit notifications whenever a new version is created. This occurs silently each time an edit is submitted.

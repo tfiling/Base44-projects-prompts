@@ -1,3 +1,4 @@
+Introduced bugs and incomplete implementation
 ## Addendum: Extended Features and Functionality
 
 ### 1. Saved Recipes Library per User

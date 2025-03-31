@@ -80,7 +80,7 @@ select_directory() {
 
 copy_past_prompts() {
     FILE_COUNT=0
-    EXCLUDE_FILES=("TODO.txt")
+    EXCLUDE_FILES=("TODO.txt" "formulation.txt")
     FIND_CMD="find $SELECTED_DIR -type f"
     for EXCLUDE_FILE in "${EXCLUDE_FILES[@]}"; do
         FIND_CMD+=" ! -name ${EXCLUDE_FILE}"
@@ -93,8 +93,8 @@ copy_past_prompts() {
         echo "" >> "$TEMP_FILE"
     fi
 
-    # Execute find command and write the contents of the files to the temporary file
-    eval "$FIND_CMD" | while IFS= read -r -d $'\0' file; do
+    # Execute find command, sort files, and write the contents to the temporary file
+    eval "$FIND_CMD" | sort -z | while IFS= read -r -d $'\0' file; do
         # Check if file is non-empty
         if [ -s "$file" ]; then
             echo "File: $file"

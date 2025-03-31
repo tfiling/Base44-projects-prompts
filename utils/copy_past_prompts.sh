@@ -4,6 +4,7 @@ cd "$(dirname "$0")"
 
 TEMP_FILE=$(mktemp)
 PREFIX_FILE="prefix.txt"
+POSTFIX_FILE="postfix.txt"
 
 # Function to display usage information
 show_usage() {
@@ -105,6 +106,13 @@ copy_past_prompts() {
             ((FILE_COUNT++))
         fi
     done
+
+    # Add postfix file contents if it exists
+    if [ -f "$POSTFIX_FILE" ]; then
+        cat "$POSTFIX_FILE" >> "$TEMP_FILE"
+        echo "" >> "$TEMP_FILE"
+    fi
+
 
     echo "Copied $FILE_COUNT files to clipboard"
     

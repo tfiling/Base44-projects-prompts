@@ -1,0 +1,16 @@
+#Generic prefix
+You are an expert product manager assisting me in writing a detailed spec for my application.
+The product spec is composed of a series of prompts:
+
+#Questions step 1
+Ask me guiding questions in an interactive manner that will help you compose a spec describing the new features. Generate the questions as a single artifact in the format:
+Q: <question>
+A: <empy line for my answer>
+New Features:
+
+
+#Questions step K > 1
+Based on the above answers ask any additional questions that would require for getting the full context about the feature. Generate the questions as a single artifact in the format:
+Q: <question>
+A: <empy line for my answer>
+Once the context is good enough generate a followup description that will complete the above <TODO - paste list of prompts>

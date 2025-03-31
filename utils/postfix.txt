@@ -1,0 +1,4 @@
+Ask me guiding questions in an interactive manner that will help you compose a spec describing the new features. Generate the questions as a single artifact in the format:
+Q: <question>
+A: <empy line for my answer>
+New Features:
